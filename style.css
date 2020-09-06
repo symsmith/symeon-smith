@@ -1,9 +1,17 @@
-@import url('https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css');
-/*
-html {
-    background: #2276d3;
-    color: white;   
-}*/
+@font-face {
+    font-family: 'Computer Modern Serif';
+    src: url(fonts/cmunrm.ttf);
+}
+
+@font-face {
+    font-family: 'Computer Modern Serif Gras';
+    src: url(fonts/cmunbx.ttf);
+}
+
+@font-face {
+    font-family: 'Computer Modern Typewriter';
+    src: url(fonts/cmuntt.ttf);
+}
 
 body {
     width: 80%;
@@ -17,9 +25,19 @@ body {
 h1 {
     font-weight: 800;
     margin-bottom: 0;
+    font-family: 'Computer Modern Serif Gras';
+}
+
+p {
+    margin-bottom: -5px;
 }
 
 a {
     color: inherit;
     outline: none;
+}
+
+#email {
+    font-size: 0.8em;
+    font-family: 'Computer Modern Typewriter';
 }
