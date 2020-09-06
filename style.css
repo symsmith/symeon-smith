@@ -19,13 +19,13 @@ body {
     margin: auto;
     margin-top: 20%;
     font-size: 1.3em;
-    font-family: 'Computer Modern Serif';
+    font-family: 'Computer Modern Serif', serif;
 }
 
 h1 {
     font-weight: 800;
     margin-bottom: 0;
-    font-family: 'Computer Modern Serif Gras';
+    font-family: 'Computer Modern Serif Gras', serif;
 }
 
 p {
@@ -39,5 +39,5 @@ a {
 
 #email {
     font-size: 0.8em;
-    font-family: 'Computer Modern Typewriter';
+    font-family: 'Computer Modern Typewriter', monospace;
 }
