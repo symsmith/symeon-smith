@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Computer Modern Serif';
-    src: url(fonts/cmunrm.ttf);
+    src: url(../fonts/cmunrm.ttf);
 }
 
 @font-face {
     font-family: 'Computer Modern Serif Gras';
-    src: url(fonts/cmunbx.ttf);
+    src: url(../fonts/cmunbx.ttf);
 }
 
 @font-face {
     font-family: 'Computer Modern Typewriter';
-    src: url(fonts/cmuntt.ttf);
+    src: url(../fonts/cmuntt.ttf);
 }
 
 body {
@@ -20,12 +20,24 @@ body {
     margin-top: 20%;
     font-size: 1.3em;
     font-family: 'Computer Modern Serif', serif;
+    transition: all 0.2s ease-in;
 }
 
-h1 {
+body.dark {
+    background: #252829;
+    color: white;
+}
+
+h1, h3 {
     font-weight: 800;
     margin-bottom: 0;
     font-family: 'Computer Modern Serif Gras', serif;
+}
+
+h3 {
+    text-align: center;
+    animation: enter 1s cubic-bezier(.73,-0.03,.32,1.28);
+    opacity: 0;
 }
 
 p {
@@ -37,7 +49,27 @@ a {
     outline: none;
 }
 
-#email {
+.links {
     font-size: 0.8em;
     font-family: 'Computer Modern Typewriter', monospace;
+}
+
+@keyframes enter {
+    from {
+        opacity: 0;
+        font-size: 1em;
+    }
+    25% {
+        font-size: 2em;
+    }
+    50% {
+        opacity: 1;
+        font-size: 1em;
+    }
+    75% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
